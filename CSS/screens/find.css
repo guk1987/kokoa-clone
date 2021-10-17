@@ -1,3 +1,18 @@
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
 .recomended-friends {
   margin: 26px 0;
   padding: 26px 0;
@@ -89,4 +104,8 @@
 }
 .open-post__heart-count span {
   margin-left: 8px;
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
